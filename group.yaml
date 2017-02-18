@@ -54,8 +54,8 @@ living_room:
   name: Living Room
   entities:
     - light.lr_lamp_level_11_0
-    - switch.christmas_switch_5_0
-    - switch.hifi_stereo_switch_4_0
+    - switch.christmas_switch_4_0
+    - switch.hifi_stereo_switch_5_0
     - input_select.scene_lr
 dining_area:
   name: Kitchen & Dining
