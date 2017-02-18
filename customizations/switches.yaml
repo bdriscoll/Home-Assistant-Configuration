@@ -1,0 +1,24 @@
+switch.entry_switch_12_0:
+  friendly_name: Entrance
+  emulated_hue_name: Entrance
+  icon: mdi:lightbulb-outline
+switch.pole_switch_2_0:
+  friendly_name: Pole Light
+  emulated_hue_name: Pole Light
+  icon: mdi:lightbulb-outline
+switch.christmas_switch_4_0:
+  friendly_name: Christmas Lights
+  emulated_hue_name: Christmas Lights
+  icon: mdi:toggle-switch
+switch.hifi_stereo_switch_5_0:
+  friendly_name: HiFi Stereo
+  icon: mdi:toggle-switch
+  emulated_hue: false
+switch.outdoor_outlet_switch_14_0:
+  friendly_name: Outdoor Outlet
+  emulated_hue_name: Outdoor Outlet
+  icon: mdi:toggle-switch
+switch.water_valve_switch_20_0:
+  friendly_name: Water Valve
+  icon: mdi:toggle-switch
+  emulated_hue: false

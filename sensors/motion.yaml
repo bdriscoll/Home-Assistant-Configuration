@@ -1,0 +1,8 @@
+platform: template
+sensors:
+  studio_motion:
+    value_template: "{%if states.sensor.security_sensor_burglar_6_10.state == '8' %}motion detected{% elif states.sensor.security_sensor_burglar_6_10.state == '3' %}tamper{% elif states.sensor.security_sensor_burglar_6_10.state == '0' %}standby{% endif %}"
+    friendly_name: "Studio Motion"
+  kitchen_motion:
+    value_template: "{%if states.sensor.kitchen_sensor_burglar_7_10.state == '8' %}motion detected{% elif states.sensor.kitchen_sensor_burglar_6_10.state == '3' %}tamper{% elif states.sensor.kitchen_sensor_burglar_7_10.state == '0' %}standby{% endif %}"
+    friendly_name: "Kitchen Motion"

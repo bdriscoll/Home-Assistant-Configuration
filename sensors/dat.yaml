@@ -1,0 +1,5 @@
+platform: mqtt
+state_topic: "ha/_temperature1"
+name: "Discharge Air"
+unit_of_measurement: "°F"
+qos: 1

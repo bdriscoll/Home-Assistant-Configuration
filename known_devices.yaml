@@ -1,0 +1,360 @@
+
+brettiphone:
+  hide_if_away: false
+  mac: D8:BB:2C:70:3F:33
+  name: Brett (iPhone)
+  picture: /local/brett.png
+  track: true
+  vendor:
+  
+airporttimecapsule:
+  hide_if_away: false
+  mac: 60:33:4B:E7:FC:15
+  name: airport-time-capsule
+  picture:
+  track: false
+  vendor:
+
+harmonyhub:
+  hide_if_away: false
+  mac: 00:04:20:F3:EF:4C
+  name: HarmonyHub
+  picture:
+  track: false
+  vendor:
+
+master_bedroom:
+  hide_if_away: false
+  mac: 08:05:81:8E:66:BD
+  name: Master Bedroom
+  picture:
+  track: false
+  vendor:
+
+kindledb98e7b9d:
+  hide_if_away: false
+  mac: AC:63:BE:F1:99:E7
+  name: kindle-db98e7b9d
+  picture:
+  track: false
+  vendor:
+
+brettsipad:
+  hide_if_away: false
+  mac: 74:81:14:3E:6F:7E
+  name: Bretts-iPad
+  picture:
+  track: false
+  vendor:
+
+e8abfa589b8b:
+  hide_if_away: false
+  mac: E8:AB:FA:58:9B:8B
+  name: --
+  picture:
+  track: false
+  vendor:
+
+e8abfa589ad3:
+  hide_if_away: false
+  mac: E8:AB:FA:58:9A:D3
+  name: --
+  picture:
+  track: false
+  vendor:
+
+94a1a2eed994:
+  hide_if_away: false
+  mac: 94:A1:A2:EE:D9:94
+  name: --
+  picture:
+  track: false
+  vendor:
+
+brettdrcollspro:
+  hide_if_away: false
+  mac: 00:25:00:F4:D0:F8
+  name: BrettDrcollsPro
+  picture:
+  track: false
+  vendor:
+
+brettdrcollspro_2:
+  hide_if_away: false
+  mac: 00:25:00:F4:C6:74
+  name: BrettDrcollsPro
+  picture:
+  track: false
+  vendor:
+
+livingrmappletv:
+  hide_if_away: false
+  mac: 9C:20:7B:A7:DE:4B
+  name: LivingRmAppleTV
+  picture:
+  track: false
+  vendor:
+
+androidea5300e310b18ca9:
+  hide_if_away: false
+  mac: 10:BF:48:CB:EA:67
+  name: android-ea5300e310b18ca9
+  picture:
+  track: false
+  vendor:
+
+hp755f3f:
+  hide_if_away: false
+  mac: 78:E7:D1:75:5F:3F
+  name: HP755F3F
+  picture:
+  track: false
+  vendor:
+
+rp32:
+  hide_if_away: false
+  mac: B8:27:EB:D4:8F:F2
+  name: RP3-2
+  picture:
+  track: false
+  vendor:
+
+living_room:
+  hide_if_away: false
+  mac: 08:05:81:E6:8B:A8
+  name: Living Room
+  picture:
+  track: false
+  vendor:
+
+jackiesmbp:
+  hide_if_away: false
+  mac: 20:C9:D0:B0:D3:DB
+  name: Jackies-MBP
+  picture:
+  track: false
+  vendor:
+
+freenas:
+  hide_if_away: false
+  mac: 20:CF:30:4F:66:D3
+  name: freenas
+  picture:
+  track: false
+  vendor:
+
+rp3:
+  hide_if_away: false
+  mac: B8:27:EB:12:4B:26
+  name: RP3
+  picture:
+  track: false
+  vendor:
+
+0c47c91d3300:
+  hide_if_away: false
+  mac: 0C:47:C9:1D:33:00
+  name: --
+  picture:
+  track: false
+  vendor:
+
+lifx_color_1000:
+  hide_if_away: false
+  mac: D0:73:D5:13:5F:78
+  name: LIFX Color 1000
+  picture:
+  track: false
+  vendor:
+
+lifx_color_1000_2:
+  hide_if_away: false
+  mac: D0:73:D5:13:56:10
+  name: LIFX Color 1000
+  picture:
+  track: false
+  vendor:
+
+sonoszb:
+  hide_if_away: false
+  mac: 00:0E:58:6D:04:6E
+  name: SonosZB
+  picture:
+  track: false
+  vendor:
+
+sonoszp:
+  hide_if_away: false
+  mac: B8:E9:37:ED:71:7E
+  name: SonosZP
+  picture:
+  track: false
+  vendor:
+
+sonoszp_2:
+  hide_if_away: false
+  mac: 00:0E:58:C1:5C:0C
+  name: SonosZP
+  picture:
+  track: false
+  vendor:
+
+sonoszp_3:
+  hide_if_away: false
+  mac: B8:E9:37:B1:0D:EA
+  name: SonosZP
+  picture:
+  track: false
+  vendor:
+
+sonoszp_4:
+  hide_if_away: false
+  mac: B8:E9:37:9A:B5:02
+  name: SonosZP
+  picture:
+  track: false
+  vendor:
+
+sonoszp_5:
+  hide_if_away: false
+  mac: 00:0E:58:C5:55:3C
+  name: SonosZP
+  picture:
+  track: false
+  vendor:
+
+080027d91581:
+  hide_if_away: false
+  mac: 08:00:27:D9:15:81
+  name: --
+  picture:
+  track: false
+  vendor:
+
+080027fcc0f7:
+  hide_if_away: false
+  mac: 08:00:27:FC:C0:F7
+  name: --
+  picture:
+  track: false
+  vendor:
+
+rxv477_b7febf:
+  hide_if_away: false
+  mac: 00:A0:DE:B7:FE:BF
+  name: RX-V477 B7FEBF
+  picture:
+  track: false
+  vendor:
+
+bretts_iphone:
+  hide_if_away: false
+  mac:
+  name: bretts iphone
+  picture:
+  track: false
+  vendor:
+
+0019e3d8c4fd:
+  hide_if_away: false
+  mac: 00:19:E3:D8:C4:FD
+  name: --
+  picture:
+  track: false
+  vendor: Apple, Inc.
+
+c_6f08aeb9ecf1d0c5:
+  hide_if_away: false
+  mac: C_6F08AEB9ECF1D0C5
+  name: c 6f08aeb9ecf1d0c5
+  picture:
+  track: false
+  vendor: unknown
+
+jdriscolllap:
+  hide_if_away: false
+  mac: B4:B6:76:DB:79:0A
+  name: JDriscoll-lap
+  picture:
+  track: false
+  vendor: Intel Corporate
+
+virginiasiphone:
+  hide_if_away: false
+  mac: 68:DB:CA:38:98:83
+  name: VirginiasiPhone
+  picture:
+  track: false
+  vendor: Apple, Inc.
+
+jackiesipad:
+  hide_if_away: false
+  mac: 8C:7B:9D:FA:87:58
+  name: Jackies-iPad
+  picture:
+  track: false
+  vendor: Apple, Inc.
+
+esp_83f4c7:
+  hide_if_away: false
+  mac: 5C:CF:7F:83:F4:C7
+  name: ESP 83F4C7
+  picture:
+  track: false
+  vendor: Espressif Inc.
+
+jackieiphone:
+  hide_if_away: false
+  mac: BC:9F:EF:39:10:1E
+  name: jackie-iphone
+  picture: /local/jackie.png
+  track: true
+  vendor: Apple, Inc.
+
+c_92d5f1977c78e8bc:
+  hide_if_away: false
+  mac: C_92D5F1977C78E8BC
+  name: c 92d5f1977c78e8bc
+  picture:
+  track: false
+  vendor: unknown
+
+bdriscoll2lap:
+  hide_if_away: false
+  mac: E4:A4:71:77:DE:09
+  name: BDriscoll2-lap
+  picture:
+  track: false
+  vendor: Intel Corporate
+
+iphone:
+  hide_if_away: false
+  mac: D0:E1:40:22:41:4C
+  name: iPhone
+  picture:
+  track: false
+  vendor: Apple, Inc.
+
+jdriscollsp:
+  hide_if_away: false
+  mac: 98:5F:D3:E5:B0:A6
+  name: JDRISCOLL-SP
+  picture:
+  track: false
+  vendor: Microsoft Corporation
+
+lutron01e70c42:
+  hide_if_away: false
+  mac: 68:9E:19:84:8E:90
+  name: lutron-01e70c42
+  picture:
+  track: false
+  vendor: Texas Instruments
+
+sonyplayer:
+  hide_if_away: false
+  mac: 00:24:BE:8A:5C:A7
+  name: sony-player
+  picture:
+  track: false
+  vendor: Sony Corporation

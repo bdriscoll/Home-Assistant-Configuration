@@ -1,0 +1,24 @@
+scene_lr:
+  name: Scene
+  icon: mdi:brightness-auto
+  initial: "-"
+  options:
+    - "-"
+    - "Off"
+    - "Nightlight"
+    - "Dimmed"
+    - "Relax"
+    - "Read"
+    
+scene_master_bedroom:
+  name: Scene
+  icon: mdi:brightness-auto
+  initial: "-"
+  options:
+    - "-"
+    - "Off"
+    - "Nightlight"
+    - "Dimmed"
+    - "Relax"
+    - "Brett Read"
+    - "Jackie Read"

@@ -1,0 +1,50 @@
+scene.master_bedroom_nightlight:
+  friendly_name: 'Bedroom Nightlight'
+  icon: mdi:brightness-4
+  emulated_hue: false
+scene.master_bedroom_dimmed:
+  friendly_name: 'Dimmed'
+  icon: mdi:brightness-7
+scene.master_bedroom_relax:
+  friendly_name: 'Relax'
+  homebridge_hidden: true
+  icon: mdi:brightness-6
+  emulated_hue: false
+scene.master_bedroom_brett_read:
+  friendly_name: 'Brett Read'
+  icon: mdi:brightness-5
+  emulated_hue: false
+scene.master_bedroom_jackie_read:
+  friendly_name: 'Jackie Read'
+  icon: mdi:brightness-5
+  emulated_hue: false
+scene.master_bedroom_concentrate:
+  friendly_name: 'Bright'
+  icon: mdi:star-circle
+  emulated_hue: false
+scene.master_bedroom_off:
+  friendly_name: 'Off'
+  icon: mdi:flashlight-off
+scene.lr_nightlight:
+  friendly_name: 'LR Nightlight'
+  icon: mdi:brightness-4
+  emulated_hue: false
+scene.lr_dimmed:
+  friendly_name: 'Dimmed'
+  icon: mdi:brightness-7
+scene.lr_relax:
+  friendly_name: 'Relax'
+  icon: mdi:brightness-6
+  emulated_hue: false
+scene.lr_read:
+  friendly_name: 'Read'
+  icon: mdi:brightness-5
+  emulated_hue: false
+scene.lr_concentrate:
+  friendly_name: 'Bright'
+  icon: mdi:star-circle
+  emulated_hue: false
+scene.lr_off:
+  friendly_name: 'Off'
+  icon: mdi:flashlight-off
+  emulated_hue: false

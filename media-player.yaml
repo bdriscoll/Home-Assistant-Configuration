@@ -1,0 +1,3 @@
+- platform: yamaha
+  name: 'Living Room Receiver'
+- platform: sonos

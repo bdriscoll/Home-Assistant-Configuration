@@ -1,0 +1,12 @@
+location_disable:
+  name: Location Based Actions Disable
+  initial: off
+    
+light_auto_shutoff_disable:
+  name: Lighting Auto-Off Disable
+  initial: off
+  
+vacation_mode:
+  name: Vacation Mode
+  initial: off
+  icon: mdi:airplane

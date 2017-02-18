@@ -1,0 +1,24 @@
+alias: Water Detected
+trigger:
+  - platform: state
+    entity_id: binary_sensor.sump_sensor_16_0
+    from: 'off'
+    to: 'on'
+  - platform: state
+    entity_id: binary_sensor.washer_sensor_17_0
+    from: 'off'
+    to: 'on'
+  - platform: state
+    entity_id: binary_sensor.closet_sensor_18_0
+    from: 'off'
+    to: 'on'
+  - platform: state
+    entity_id: binary_sensor.water_heater_sensor_19_0
+    from: 'off'
+    to: 'on'
+action:
+  - service: notify.ios_bretts_iphone
+    data:
+      message: 'Alert! A Water Leak Has Been Detected'
+  - service: homeassistant.turn_on
+    entity_id: switch.water_valve_switch_20_0

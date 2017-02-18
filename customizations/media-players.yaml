@@ -1,0 +1,26 @@
+media_player.rover:
+  hidden: true
+  emulated_hue: false
+media_player.kitchen:
+  hidden: true
+  emulated_hue: false
+media_player.hifi:
+  hidden: false
+  emulated_hue: false
+media_player.studio:
+  hidden: true
+  emulated_hue: false
+media_player.master_bedroom:
+  hidden: true
+  emulated_hue: false
+media_player.roku_5f35ch095608:
+  friendly_name: Master Bedroom
+  hidden: true
+  emulated_hue: false
+media_player.roku_yy0058991801:
+  friendly_name: Living Room
+  hidden: false
+  emulated_hue: false
+media_player.living_room_receiver:
+  hidden: true
+  emulated_hue: false

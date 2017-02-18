@@ -1,0 +1,11 @@
+alias: Turn off Exterior Accent Lights
+trigger: 
+  platform: time
+  hours: '22'
+  minutes: '00'
+  seconds: '00'
+action:
+  service: homeassistant.turn_off
+  entity_id:
+    - light.garage_sconces_level_9_0
+    - switch.outdoor_outlet_switch_14_0

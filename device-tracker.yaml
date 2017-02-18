@@ -1,0 +1,14 @@
+- platform: netgear
+  host: 192.168.1.1
+  username: admin
+  password: "@Jameson5150"
+  interval_seconds: 30
+  consider_home: 1800
+  track_new_devices: false
+- platform: nmap_tracker
+  hosts: 192.168.1.1./24
+- platform: automatic
+  client_id: 9666bd6c6fa398a72b7d
+  secret: 9785e73fad756cdec5a6c3288efced1d075adff1
+  username: brettdriscoll@gmail.com
+  password: "@Jameson5150"

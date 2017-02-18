@@ -1,0 +1,8 @@
+name: Master Bedroom Dimmed
+entities:
+  light.brett_bedside:
+    state: on
+    profile: relax
+  light.jackie_bedside:
+    state: on
+    profile: relax

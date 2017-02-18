@@ -1,0 +1,5 @@
+name: Master Bedroom Brett Read
+entities:
+  light.brett_bedside:
+    state: on
+    profile: reading

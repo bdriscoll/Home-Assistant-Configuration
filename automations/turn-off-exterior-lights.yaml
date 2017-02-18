@@ -1,0 +1,8 @@
+alias: Turn off lights after sunrise
+trigger:
+  platform: sun
+  event: sunrise
+
+action:
+  service: homeassistant.turn_on
+  entity_id: scene.exterior_lights_off

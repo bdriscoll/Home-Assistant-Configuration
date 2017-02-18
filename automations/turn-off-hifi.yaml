@@ -1,0 +1,14 @@
+alias: Turn off HiFi
+trigger:
+  platform: state
+  entity_id: 'media_player.hifi'
+  from: 'playing'
+  to: 'paused'
+  for:
+    hours: 0
+    minutes: 10
+    seconds: 0
+    
+action:
+  service: homeassistant.turn_off
+  entity_id: switch.hifi_stereo_switch_5_0

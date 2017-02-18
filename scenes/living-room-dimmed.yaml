@@ -1,0 +1,5 @@
+name: LR Dimmed
+entities:
+  light.lr_lamp_level_11_0:
+    state: on
+    profile: relax

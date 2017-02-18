@@ -1,0 +1,174 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: 395
+  unit_system: imperial
+  time_zone: America/New_York
+  customize: !include_dir_merge_named customizations
+
+http:
+  api_password: !secret http_password
+  ssl_certificate: /etc/letsencrypt/live/cruiser.duckdns.org/fullchain.pem
+  ssl_key: /etc/letsencrypt/live/cruiser.duckdns.org/privkey.pem
+  trusted_networks:
+    - 192.168.1.0/24
+
+sun:
+#influxdb:
+#  host: 192.168.1.240
+#  port: 8086
+#  database: homeassistant
+#  username: root
+#  password: !secret influxdb_password
+recorder:
+  purge_days: 10
+  db_url: !secret mysql_recorder
+  
+history:
+  include:
+    domains:
+      - sensor
+      - switch
+      - device_tracker
+      - media_tracker
+
+# Enables the frontend      
+frontend:
+
+logbook:
+  exclude:
+    entities:
+      - sensor.last_boot
+      - sensor.date
+    domains:
+      - sun
+      - weblink
+      
+updater:
+
+logger:
+  default: error
+
+mqtt:
+  broker: 192.168.1.240
+  port: 1883
+  client_id: home-assistant-1
+  keepalive: 60
+  username: homeassistant
+  password: !secret mqtt_password
+  protocol: 3.1
+
+weblink:
+  entities:
+    - name: Router
+      url: http://192.168.1.1
+    - name: Modem
+      url: http://192.168.100.1
+    - name: Home Assistant
+      url: https://home-assistant.io
+
+notify: !include notify.yaml
+
+ios:
+
+# Components
+sensor: !include_dir_list sensors
+
+switch: !include_dir_list switches
+
+media_player: !include media-player.yaml
+
+device_tracker: !include device-tracker.yaml
+
+remote:
+  - platform: harmony
+    name: Living Room
+    host: 192.168.1.5
+
+# Display
+group: !include group.yaml
+
+# Automation
+automation: !include_dir_list automations
+
+scene: !include_dir_list scenes
+
+# Controls
+input_select: !include input_select.yaml
+
+# Emulated Hue Bridge
+emulated_hue:
+  type: alexa
+  host_ip: 192.168.1.40
+  listen_port: 8300
+  expose_by_default: true
+  exposed_domains:
+    - light
+    - switch
+
+# Zwave Configuration
+ 
+zwave:
+  usb_path: /dev/ttyACM0
+  config_path: /srv/hass/hass_venv/lib/python3.4/site-packages/libopenzwave-0.3.1-py3.4-linux-armv7l.egg/config
+#  config_path: /srv/hass/src/open-zwave-control-panel/config
+  polling_interval: 60000
+
+zone:
+  name: Home
+  latitude: 43.19013999999999
+  longitude: -77.53913799999998
+  radius: 25
+  icon: mdi:home
+
+zone 2:
+  name: Work
+  latitude: 43.160513
+  longitude: -77.617804
+  radius: 25
+  icon: mdi:work
+  
+ifttt:
+  key: g_uhLnncLqTaibKrZ78RUJ6jYTkx9LZqEznV5dhHYlM
+  
+light:
+  - platform: lifx
+    broadcast: 192.168.1.255
+
+# EmonCMS History
+
+emoncms_history:
+  api_key: 6f2e20e578a852f79bd56c5075bcdd9f
+  url: https://emoncms.org
+  inputnode: 1
+  whitelist:
+    - sensor.pws_temp_f
+    - sensor.energy_meter_power_3_4
+    - sensor.security_sensor_temperature_6_1
+    - sensor.kitchen_sensor_temperature_7_1
+  
+# Security Cameras
+  
+camera:
+  platform: foscam
+  ip: 192.168.1.11
+  name: Living Room
+  username: brettdriscoll
+  password: "@Jameson5150"
+  
+camera 2:
+  platform: foscam
+  ip: 192.168.1.10
+  name: Kitchen
+  username: brettdriscoll
+  password: "@Jameson5150"
+
+camera 3:
+  platform: foscam
+  ip: 192.168.1.12
+  name: Garage
+  username: brettdriscoll
+  password: "@Jameson5150"

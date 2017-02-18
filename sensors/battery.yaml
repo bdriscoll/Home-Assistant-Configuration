@@ -1,0 +1,26 @@
+platform: template
+sensors:
+  battery_slider:
+    friendly_name: 'Sliding Door Battery'
+    unit_of_measurement: '%'
+    value_template: '{{ states.sensor.sliding_door_sourcenodeid_10_2.attributes.battery_level }}'
+  battery_front_door:
+    friendly_name: 'Front Door Battery'
+    unit_of_measurement: '%'
+    value_template: '{{ states.sensor.front_door_sensor_15_0.attributes.battery_level }}'
+  battery_sump:
+    friendly_name: 'Sump Sensor Battery'
+    unit_of_measurement: '%'
+    value_template: '{{ states.sensor.sump_sourcenodeid_16_2.attributes.battery_level }}'
+  battery_washer:
+    friendly_name: 'Washer Sensor Battery'
+    unit_of_measurement: '%'
+    value_template: '{{ states.sensor.washer_sourcenodeid_17_2.attributes.battery_level }}'
+  battery_closet:
+    friendly_name: 'Closet Sensor Battery'
+    unit_of_measurement: '%'
+    value_template: '{{ states.sensor.closet_sourcenodeid_18_2.attributes.battery_level }}'
+  battery_water_heater:
+    friendly_name: 'Water Heater Sensor Battery'
+    unit_of_measurement: '%'
+    value_template: '{{ states.sensor.water_heater_sourcenodeid_19_2.attributes.battery_level }}'

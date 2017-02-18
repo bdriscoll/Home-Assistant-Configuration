@@ -1,0 +1,12 @@
+name: Exterior Lights On
+entities:
+  light.garage_sconces_level_9_0:
+    state: on
+    brightness: 50
+  light.porch_level_13_0:
+    state: on
+    brightness: 255
+  switch.pole_switch_2_0:
+    state: on
+  switch.outdoor_outlet_switch_14_0:
+    state: on

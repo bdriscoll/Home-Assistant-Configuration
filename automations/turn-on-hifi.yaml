@@ -1,0 +1,9 @@
+alias: Turn on HiFi
+trigger:
+  platform: state
+  entity_id: 'media_player.hifi'
+  to: 'playing'
+      
+action:
+  service: homeassistant.turn_on
+  entity_id: switch.hifi_stereo_switch_5_0

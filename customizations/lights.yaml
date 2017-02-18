@@ -1,0 +1,20 @@
+light.brett_bedside:
+  friendly_name: Brett Bedside
+  emulated_hue_name: Brett Bedside
+  icon: mdi:lightbulb-outline
+light.jackie_bedside:
+  friendly_name: Jackie Bedside
+  emulated_hue_name: Jackie Bedside
+  icon: mdi:lightbulb-outline
+light.lr_lamp_level_11_0:
+  friendly_name: Living Room Lamp
+  emulated_hue_name: Living Room Lamp
+  icon: mdi:lightbulb-outline
+light.garage_sconces_level_9_0:
+  friendly_name: Garage Sconces
+  emulated_hue_name: Garage Sconces
+  icon: mdi:lightbulb-outline
+light.porch_level_13_0:
+  friendly_name: Porch Light
+  emulated_hue_name: Porch Light
+  icon: mdi:lightbulb-outline

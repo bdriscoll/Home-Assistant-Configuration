@@ -1,0 +1,171 @@
+default_view:
+  name: DEFAULT
+  view: yes
+  icon: mdi:home
+  entities:
+    - group.master_bedroom
+    - group.living_room
+    - group.studio
+    - group.dining_area
+    - group.exterior_lights
+    - sun.sun
+    - device_tracker.brettiphone
+    - device_tracker.jackieiphone
+    - group.cameras
+sensor_view:
+  name: Sensors
+  view: yes
+  icon: mdi:gauge
+  entities:
+    - group.environment
+    - group.motion_sensors
+    - group.water_sensors
+    - group.doors_windows
+    - group.power_consumption
+    - group.home_energy
+    - group.presence
+    - sun.sun
+    - group.battery_levels
+status_view:
+  name: Status
+  view: yes
+  icon: mdi:chip
+  entities:
+    - group.sensor_pi
+weather_view:
+  name: Weather
+  view: yes
+  icon: mdi:white-balance-sunny
+  entities:
+    - group.wunderground
+misc_view:
+  name: Misc
+  view: yes
+  icon: mdi:power
+  entities:
+    - group.media_players
+master_bedroom:
+  name: Master Bedroom
+  entities:
+    - light.brett_bedside
+    - light.jackie_bedside
+    - input_select.scene_master_bedroom
+living_room:
+  name: Living Room
+  entities:
+    - light.lr_lamp_level_11_0
+    - switch.christmas_switch_5_0
+    - switch.hifi_stereo_switch_4_0
+    - input_select.scene_lr
+dining_area:
+  name: Kitchen & Dining
+  entities:
+    - switch.entry_switch_12_0
+environment:
+  name: Environment
+  entities:
+    - sensor.kitchen_sensor_temperature_7_1
+    - sensor.security_sensor_temperature_6_1
+    - sensor.kitchen_sensor_relative_humidity_7_5
+    - sensor.security_sensor_relative_humidity_6_5
+    - sensor.discharge_air
+motion_sensors:
+  name: Motion Sensors
+  entities:
+    - sensor.studio_motion
+    - sensor.kitchen_motion
+water_sensors:
+  name: Water Sensors
+  entities:
+    - binary_sensor.sump_sensor_16_0
+    - binary_sensor.washer_sensor_17_0
+    - binary_sensor.closet_sensor_18_0
+    - binary_sensor.water_heater_sensor_19_0
+    - switch.water_valve_switch_20_0
+doors_windows:
+  name: Doors & Windows
+  entities:
+    - binary_sensor.front_door_sensor_15_0
+    - binary_sensor.sliding_door_sensor_10_0
+battery_levels:
+  name: Battery Levels
+  entities:
+    - sensor.battery_closet
+    - sensor.battery_front_door
+    - sensor.battery_slider
+    - sensor.battery_sump
+    - sensor.battery_washer
+    - sensor.battery_water_heater
+    - sensor.brett_iphone_battery_level
+    - sensor.brett_iphone_batter_state
+exterior_lights:
+  name: Exterior Lights
+  entities:
+    - switch.pole_switch_2_0
+    - light.porch_level_13_0
+    - light.garage_sconces_level_9_0
+    - switch.outdoor_outlet_switch_14_0
+    - input_select.scene_exterior
+cameras:
+  name: Security Cameras
+  entities:
+    - camera.kitchen
+    - camera.living_room
+    - camera.garage
+power_consumption:
+  name: Power
+  entities:
+    - sensor.hifi_stereo_voltage_5_16
+    - sensor.christmas_power_4_8
+    - sensor.hifi_stereo_power_5_8
+    - sensor.garage_sconces_power_9_8
+    - sensor.energy_meter_power_3_4
+home_energy:
+  name: Home Energy Use (kWh)
+  entities:
+    - sensor.garage_sconces_energy_9_0
+    - sensor.energy_meter_energy_3_0
+    - sensor.christmas_energy_4_0
+    - sensor.hifi_stereo_energy_5_0
+presence:
+  name: Presence
+  entities:
+    - device_tracker.brettiphone
+    - device_tracker.jackieiphone
+sensor_pi:
+  name: Raspberry Pi
+  entities: 
+    - sensor.cpu_use
+    - sensor.disk_use_
+    - sensor.disk_use_varlog
+    - sensor.last_boot
+    - sensor.ram_free
+    - sensor.ram_use
+    - sensor.since_last_boot
+    - sensor.swap_use
+media_players:
+  name: Media Players
+  entities:
+    - media_player.rover
+    - media_player.hifi
+    - media_player.kitchen
+    - media_player.master_bedroom
+    - media_player.studio
+    - media_player.roku_5f35ch095608
+    - media_player.roku_yy0058991801
+    - media_player.living_room_receiver
+wunderground:
+  name: Wunderground
+  entities:
+    - sensor.pws_weather
+    - sensor.pws_temp_f
+    - sensor.pws_feelslike_string
+    - sensor.pws_heat_index_string
+    - sensor.pws_relative_humidity
+    - sensor.pws_dewpoint_string
+    - sensor.pws_wind_string
+    - sensor.pws_precip_today_string
+    - sensor.pws_pressure_in
+    - sensor.pws_visibility_mi
+    - sensor.pws_uv
+    - sensor.pws_solarradiation
