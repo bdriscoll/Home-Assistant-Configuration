@@ -56,15 +56,6 @@ mqtt:
   password: !secret mqtt_password
   protocol: 3.1
 
-weblink:
-  entities:
-    - name: Router
-      url: !secret router
-    - name: Modem
-      url: !secret modem
-    - name: Home Assistant
-      url: https://home-assistant.io
-
 notify: !include notify.yaml
 
 ios:
