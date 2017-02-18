@@ -17,12 +17,7 @@ http:
     - 192.168.1.0/24
 
 sun:
-#influxdb:
-#  host: 192.168.1.240
-#  port: 8086
-#  database: homeassistant
-#  username: root
-#  password: !secret influxdb_password
+
 recorder:
   purge_days: 10
   db_url: !secret mysql_recorder
@@ -64,9 +59,9 @@ mqtt:
 weblink:
   entities:
     - name: Router
-      url: http://192.168.1.1
+      url: !secret router
     - name: Modem
-      url: http://192.168.100.1
+      url: !secret modem
     - name: Home Assistant
       url: https://home-assistant.io
 
