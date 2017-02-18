@@ -146,24 +146,4 @@ emoncms_history:
     - sensor.kitchen_sensor_temperature_7_1
   
 # Security Cameras
-  
-camera:
-  platform: foscam
-  ip: 192.168.1.11
-  name: Living Room
-  username: brettdriscoll
-  password: "@Jameson5150"
-  
-camera 2:
-  platform: foscam
-  ip: 192.168.1.10
-  name: Kitchen
-  username: brettdriscoll
-  password: "@Jameson5150"
-
-camera 3:
-  platform: foscam
-  ip: 192.168.1.12
-  name: Garage
-  username: brettdriscoll
-  password: "@Jameson5150"
+camera: !include cameras.yaml
