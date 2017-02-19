@@ -1,7 +1,7 @@
 alias: Set Foscam to Away Mode when no one is home
-  trigger:
-    platform: state
-    entity_id: group.all_devices
-    from: 'home'
-  action:
-    service: script.foscam_on
+trigger:
+  platform: state
+  entity_id: group.all_devices
+  from: 'home'
+action:
+  service: script.foscam_on
