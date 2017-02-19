@@ -36,7 +36,7 @@ frontend:
 logbook:
   exclude:
     entities:
-      - sensor.last_boot
+      - sensor.since_last_boot
       - sensor.date
     domains:
       - sun
