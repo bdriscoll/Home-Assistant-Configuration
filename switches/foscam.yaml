@@ -1,0 +1,7 @@
+platform: command_line
+switches:
+  foscam_lr_motion:
+    command_on: 'curl -k "https://192.168.1.11:443/cgi-bin/CGIProxy.fcgi?cmd=setMotionDetectConfig&isEnable=1&usr=brettdriscoll&pwd=@Jameson5150"'
+    command_off: 'curl -k "https://192.168.1.11:443/cgi-bin/CGIProxy.fcgi?cmd=setMotionDetectConfig&isEnable=0&usr=brettdriscoll&pwd=@Jameson5150"'
+    command_state: 'curl -k --silent "https://192.168.1.11:443/cgi-bin/CGIProxy.fcgi?cmd=getMotionDetectConfig&usr=brettdriscoll&pwd=@Jameson5150" | grep -oP "(?<=isEnable>).*?(?=</isEnable>)"'
+    value_template: '{{ value == "1" }}'
