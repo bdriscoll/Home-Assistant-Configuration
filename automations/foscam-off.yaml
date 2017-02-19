@@ -1,7 +1,7 @@
 alias: Set Foscam to Home Mode when someone is Home
-  trigger:
-    platform: state
-    entity_id: group.all_devices
-    to: 'home'
-  action:
-    service: script.foscam_off
+trigger:
+  platform: state
+  entity_id: group.all_devices
+  to: 'home'
+action:
+  service: script.foscam_off
