@@ -48,7 +48,7 @@ logger:
   default: error
 
 mqtt:
-  broker: 192.168.1.240
+  broker: 192.168.1.40
   port: 1883
   client_id: home-assistant-1
   keepalive: 60
@@ -74,7 +74,7 @@ script: !include_dir_list scripts
 remote:
   - platform: harmony
     name: Living Room
-    host: 192.168.1.5
+    host: 192.168.1.213
 
 # Display
 group: !include group.yaml
