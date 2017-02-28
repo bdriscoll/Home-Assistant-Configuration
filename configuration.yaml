@@ -101,8 +101,8 @@ emulated_hue:
  
 zwave:
   usb_path: /dev/ttyACM0
-  config_path: /srv/hass/hass_venv/lib/python3.4/site-packages/libopenzwave-0.3.1-py3.4-linux-armv7l.egg/config
-#  config_path: /srv/hass/src/open-zwave-control-panel/config
+#  config_path: /srv/hass/hass_venv/lib/python3.4/site-packages/libopenzwave-0.3.1-py3.4-linux-armv7l.egg/config
+  config_path: /srv/homeassistant/python-openzwave/openzwave/config
   polling_interval: 60000
 
 zone:
