@@ -1,6 +1,0 @@
-name: Master Bedroom off
-entities:
-  light.brett_bedside:
-    state: off
-  light.jackie_bedside:
-    state: off
