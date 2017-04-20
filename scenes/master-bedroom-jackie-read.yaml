@@ -1,5 +1,0 @@
-name: Master Bedroom Jackie Read
-entities:
-  light.jackie_bedside:
-    state: on
-    profile: reading
