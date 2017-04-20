@@ -1,5 +1,0 @@
-name: LR Bright
-entities:
-  light.lr_lamp_level_11_0:
-    state: on
-    brightness: 100
