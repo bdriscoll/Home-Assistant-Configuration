@@ -1,9 +1,5 @@
-location_disable:
-  name: Location Based Actions Disable
-  initial: off
-    
-light_auto_shutoff_disable:
-  name: Lighting Auto-Off Disable
+guest_mode:
+  name: Guests Overnight
   initial: off
   
 vacation_mode:

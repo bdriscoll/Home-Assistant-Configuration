@@ -13,42 +13,56 @@ http:
   api_password: !secret http_password
   ssl_certificate: /etc/letsencrypt/live/cruiser.duckdns.org/fullchain.pem
   ssl_key: /etc/letsencrypt/live/cruiser.duckdns.org/privkey.pem
+  base_url: !secret base_url
   trusted_networks:
     - 192.168.1.0/24
+    - 192.168.50.0/24
 
+frontend:
+ios:
+config:
 sun:
 
-recorder:
-  purge_days: 10
-  db_url: !secret mysql_recorder
+recorder: !include recorder.yaml
+logger: !include logger.yaml
   
+influxdb:
+  host: 192.168.1.230
+  port: 8086
+  database: homeassistant
+  username: root
+  password: !secret influxdb_password
+  whitelist:
+    - sensor.energy_meter_power_3_4
+    - sensor.security_temperature_6_1
+    - sensor.security_relative_humidity_6_5
+    - sensor.kitchen_temperature_7_1
+    - sensor.kitchen_relative_humidity_7_5
+    - sensor.pws_temp_f
+    - sensor.pws_relative_humidity
+    - sun.sun
+    - sensor.hifi_stereo_voltage_5_16
+    - sensor.house_current
+
 history:
   include:
     domains:
       - sensor
       - switch
-      - device_tracker
-      - media_tracker
-
-# Enables the frontend      
-frontend:
-
-logbook:
+      - media_player
+      - light
   exclude:
     entities:
-      - sensor.since_last_boot
-      - sensor.date
+     - sensor.last_boot
+     - sensor.date
+     
+logbook:
+  include:
     domains:
-      - sun
-      - weblink
-      
-updater:
-
-logger:
-  default: error
+      - switch
 
 mqtt:
-  broker: 192.168.1.40
+  broker: 192.168.50.40
   port: 1883
   client_id: home-assistant-1
   keepalive: 60
@@ -58,39 +72,27 @@ mqtt:
 
 notify: !include notify.yaml
 
-ios:
-
 # Components
 sensor: !include_dir_list sensors
-
-switch: !include_dir_list switches
-
+binary_sensor: !include_dir_merge_list binary_sensors
+#switch: !include_dir_list switches
 media_player: !include media-player.yaml
-
-device_tracker: !include device-tracker.yaml
-
-script: !include_dir_list scripts
+device_tracker: !include_dir_merge_list device_tracker
+#script: !include_dir_merge_name scripts
+group: !include groups.yaml
+automation: !include_dir_merge_list automations
+scene: !include_dir_merge_list scenes
+input_boolean: !include input_boolean.yaml
 
 remote:
   - platform: harmony
     name: Living Room
-    host: 192.168.1.213
-
-# Display
-group: !include group.yaml
-
-# Automation
-automation: !include_dir_list automations
-
-scene: !include_dir_list scenes
-
-# Controls
-input_select: !include input_select.yaml
+    host: 192.168.50.14
 
 # Emulated Hue Bridge
 emulated_hue:
   type: alexa
-  host_ip: 192.168.1.40
+  host_ip: 192.168.50.40
   listen_port: 8300
   expose_by_default: true
   exposed_domains:
@@ -98,11 +100,9 @@ emulated_hue:
     - switch
 
 # Zwave Configuration
- 
+
 zwave:
   usb_path: /dev/ttyACM0
-#  config_path: /srv/hass/hass_venv/lib/python3.4/site-packages/libopenzwave-0.3.1-py3.4-linux-armv7l.egg/config
-  config_path: /srv/homeassistant/python-openzwave/openzwave/config
   polling_interval: 60000
 
 zone:
@@ -118,16 +118,25 @@ zone 2:
   longitude: !secret work_longitude
   radius: 25
   icon: mdi:work
-  
+
 ifttt:
   key: !secret ifttt_key
-  
+
 light:
   - platform: lifx
-    broadcast: 192.168.1.255
+
+lutron_caseta:
+  host: 192.168.50.41
+  username: !secret lutron_username
+  password: !secret lutron_password
+  
+tts:
+  - platform: amazon_polly
+    aws_access_key_id: !secret aws_access_key_ID
+    aws_secret_access_key: !secret aws_secret_access_key
+    region_name: 'us-east-1'
 
 # EmonCMS History
-
 emoncms_history:
   api_key: !secret emoncms_key
   url: https://emoncms.org
@@ -135,8 +144,8 @@ emoncms_history:
   whitelist:
     - sensor.pws_temp_f
     - sensor.energy_meter_power_3_4
-    - sensor.security_sensor_temperature_6_1
-    - sensor.kitchen_sensor_temperature_7_1
-  
+    - sensor.security_temperature_6_1
+    - sensor.kitchen_temperature_7_1
+
 # Security Cameras
 camera: !include cameras.yaml

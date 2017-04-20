@@ -1,0 +1,15 @@
+#- platform: foscam
+#  ip: !secret foscam_ip_lr
+#  name: Living Room
+#  username: !secret foscam_username
+#  password: !secret foscam_password 
+- platform: foscam
+  ip: !secret foscam_ip_kitchen
+  name: Kitchen
+  username: !secret foscam_username
+  password: !secret foscam_password
+- platform: foscam
+  ip: !secret foscam_ip_garage
+  name: Garage
+  username: !secret foscam_username
+  password: !secret foscam_password

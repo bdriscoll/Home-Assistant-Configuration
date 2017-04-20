@@ -1,3 +1,12 @@
 - platform: yamaha
   name: 'Living Room Receiver'
+- platform: roku
 - platform: sonos
+  interface_addr: 192.168.1.200
+  hosts:
+    - 192.168.1.200
+    - 192.168.1.201
+    - 192.168.1.202
+    - 192.168.1.203
+    - 192.168.1.204
+    - 192.168.1.205
