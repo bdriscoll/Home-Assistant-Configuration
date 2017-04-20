@@ -1,8 +1,0 @@
-name: Master Bedroom Bright
-entities:
-  light.brett_bedside:
-    state: on
-    profile: energize
-  light.jackie_bedside:
-    state: on
-    profile: energize
