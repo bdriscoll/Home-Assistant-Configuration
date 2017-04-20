@@ -7,7 +7,7 @@ light.jackie_bedside:
   emulated_hue_name: Jackie Bedside
   icon: mdi:lightbulb-outline
 light.lr_lamp_level_11_0:
-  friendly_name: Living Room Lamp
+  friendly_name: Lamp
   emulated_hue_name: Living Room Lamp
   icon: mdi:lightbulb-outline
 light.garage_sconces_level_9_0:
@@ -17,4 +17,13 @@ light.garage_sconces_level_9_0:
 light.porch_level_13_0:
   friendly_name: Porch Light
   emulated_hue_name: Porch Light
+  icon: mdi:lightbulb-outline
+light.basement_overhead:
+  friendly_name: Basement Lights
+  icon: mdi:lightbulb-outline
+light.basement_stairs:
+  friendly_name: Basement Stairs
+  icon: mdi:lightbulb-outline
+light.living_room_overhead:
+  friendly_name: Overhead Lights
   icon: mdi:lightbulb-outline

@@ -1,8 +1,12 @@
 platform: template
 sensors:
   studio_motion:
-    value_template: "{%if states.sensor.security_sensor_burglar_6_10.state == '8' %}motion detected{% elif states.sensor.security_sensor_burglar_6_10.state == '3' %}tamper{% elif states.sensor.security_sensor_burglar_6_10.state == '0' %}standby{% endif %}"
+    value_template: "{%if states.sensor.security_burglar_6_10.state == '8' %}motion detected{% elif states.sensor.security_burglar_6_10.state == '3' %}tamper{% elif states.sensor.security_burglar_6_10.state == '0' %}standby{% endif %}"
     friendly_name: "Studio Motion"
   kitchen_motion:
-    value_template: "{%if states.sensor.kitchen_sensor_burglar_7_10.state == '8' %}motion detected{% elif states.sensor.kitchen_sensor_burglar_6_10.state == '3' %}tamper{% elif states.sensor.kitchen_sensor_burglar_7_10.state == '0' %}standby{% endif %}"
+    value_template: "{%if states.sensor.kitchen_burglar_7_10.state == '8' %}motion detected{% elif states.sensor.kitchen_burglar_6_10.state == '3' %}tamper{% elif states.sensor.kitchen_burglar_7_10.state == '0' %}standby{% endif %}"
     friendly_name: "Kitchen Motion"
+  house_current:
+    value_template: "{{ ((float(states.sensor.energy_meter_power_3_4.state)) / (float(states.sensor.hifi_stereo_voltage_5_16.state))) | round(2) }}"
+    friendly_name: "House Current"
+    unit_of_measurement: 'A'

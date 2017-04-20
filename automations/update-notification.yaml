@@ -1,8 +1,11 @@
-alias: Update notifications
-trigger:
-  platform: state
-  entity_id: updater.updater
-action:
-  service: notify.ios_bretts_iphone
-  data:
-    message: 'There is a new release of Home Assistant available.'
+- alias: Update notifications
+  trigger:
+    platform: state
+    entity_id: updater.updater
+  action:
+    - service: notify.ios_bretts_iphone
+      data:
+        message: 'There is a new release of Home Assistant available.'
+    - service: notify.notify
+      data:
+        message: 'There is a new release of Home Assistant available.'

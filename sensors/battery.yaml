@@ -1,5 +1,23 @@
 platform: template
 sensors:
+  battery_brett_iphone:
+    friendly_name: 'Brett iPhone Battery'
+    unit_of_measurement: '%'
+    value_template: >-
+        {%- if states.device_tracker.brett_iphone.attributes.battery %}
+            {{ states.device_tracker.brett_iphone.attributes.battery }}
+        {% else %}
+            {{ states.sensor.brett_iphone_battery_state.state }}
+        {%- endif %}
+  battery_jackie_iphone:
+    friendly_name: 'Jackie iPhone Battery'
+    unit_of_measurement: '%'
+    value_template: >-
+        {%- if states.device_tracker.jackie_iphone.attributes.battery %}
+            {{ states.device_tracker.jackie_iphone.attributes.battery }}
+        {% else %}
+            {{ states.sensor.jackie_iphone_battery_state.state }}
+        {%- endif %}
   battery_slider:
     friendly_name: 'Sliding Door Battery'
     unit_of_measurement: '%'

@@ -1,8 +1,8 @@
-name: Exterior Lights Off
-entities:
-  light.garage_sconces_level_9_0:
-    state: off
-  light.porch_level_13_0:
-    state: off
-  switch.pole_switch_2_0:
-    state: off
+- name: Exterior Lights Off
+  entities:
+    light.garage_sconces_level_9_0:
+      state: off
+    light.porch_level_13_0:
+      state: off
+    switch.pole_switch_2_0:
+      state: off

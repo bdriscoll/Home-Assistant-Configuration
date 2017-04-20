@@ -1,6 +1,6 @@
-device_tracker.brettiphone:
+device_tracker.brett_iphone:
   friendly_name: Brett (iPhone)
   emulated_hue: false
-device_tracker.jackieiphone:
+device_tracker.jackie_iphone:
   friendly_name: Jackie (iPhone)
   emulated_hue: false

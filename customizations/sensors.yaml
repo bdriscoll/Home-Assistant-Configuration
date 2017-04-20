@@ -1,22 +1,22 @@
 sensor.discharge_air:
   friendly_name: Discharge Air
   icon: mdi:thermometer
-sensor.kitchen_sensor_alarm_level_7_1:
+sensor.kitchen_alarm_level_7_1:
   hidden: false
-sensor.kitchen_sensor_alarm_type_7_1:
+sensor.kitchen_alarm_type_7_1:
   hidden: false
-sensor.kitchen_sensor_burglar_7_10:
+sensor.kitchen_burglar_7_10:
   hidden: false
-sensor.kitchen_sensor_luminance_7_3:
+sensor.kitchen_luminance_7_3:
   hidden: true
-sensor.kitchen_sensor_sourcenodeid_7_2:
+sensor.kitchen_sourcenodeid_7_2:
   hidden: true
-sensor.kitchen_sensor_ultraviolet_7_27:
+sensor.kitchen_ultraviolet_7_27:
   hidden: true
-sensor.kitchen_sensor_relative_humidity_7_5:
+sensor.kitchen_relative_humidity_7_5:
   friendly_name: Kitchen Humidity
   icon: mdi:weather-rainy
-sensor.kitchen_sensor_temperature_7_1:
+sensor.kitchen_temperature_7_1:
   friendly_name: Kitchen Temperature
   icon: mdi:thermometer
 sensor.christmas_current_4_20:
@@ -143,9 +143,9 @@ sensor.pws_wind_kph:
   friendly_name: Wind Speed (kph)
 sensor.pws_wind_mph:
   friendly_name: Wind Speed (mph)
-binary_sensor.security_sensor_sensor_6_0:
+binary_sensor.security_sensor_6_0:
   friendly_name: Studio
-binary_sensor.kitchen_sensor_sensor_7_0:
+binary_sensor.kitchen_sensor_7_0:
   friendly_name: Kitchen
 binary_sensor.front_door_sensor_15_0:
   friendly_name: Front Door
